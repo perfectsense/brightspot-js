@@ -10,20 +10,11 @@ Assumptions:
 
 ## More Asynchronous
 
-This is the recommended approach for most projects.
+This is the recommended approach for most projects. Note that if you use this method, you shouldn't have any other `<script>` in the page.
 
 ### HTML
 
-    <!-- Include RequireJS. -->
-    <script type="text/javascript" src="/path-to-js/require.js"></script>
-
-    <!-- Configure RequireJS for runtime only. -->
-    <script type="text/javascript">
-        requirejs.config({ 'baseUrl': '/path-to-js/' });
-    </script>
-
-    <!-- Include common initialization code. -->
-    <script type="text/javascript" src="/path-to-js/main.js"</script>
+    <script type="text/javascript" data-main="/path-to-js/main.js" src="/path-to-js/require.js"></script>
 
 ### `main.js`
 
@@ -79,9 +70,9 @@ You many need to use this approach if you have to expose globals like `$` from j
 
 ## FAQ
 
-**Why don't you use the `data-main` attribute?**
+**Why don't you use the `data-main` attribute in the more asynchronous example?**
 
-I think there are lots of subtle issues when you use the `data-main` attribute if you have to configure RequireJS in any way. Take the following HTML for example:
+I think there are lots of subtle issues when you use the `data-main` attribute if you have to configure RequireJS in any way and include more scripts. Take the following HTML for example:
 
     <!doctype>
     <html>
