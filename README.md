@@ -30,6 +30,18 @@ Miscellaneous utility functions.
 
 Mobile slide menu.
 
+### [truncate.js](https://github.com/gitastrophe/truncate.js/)
+
+a jQuery plugin for deep-HTML truncation and toggling
+
+### [lazyload.js](https://github.com/gitastrophe/lazyload.js/)
+
+a jQuery plugin for lazy-loading images, then getting on with your code
+
+### [MediaClass](https://github.com/gitastrophe/MediaClass)
+
+a JavaScript implementation of [element queries](http://www.jonathantneal.com/blog/thoughts-on-media-queries-for-elements/) by Jonathan Neal, forked with modifications for optimized triggering
+
 # Useful Snippets
 
 ### Centering an element in a page
